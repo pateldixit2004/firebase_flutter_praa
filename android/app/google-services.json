@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "625441822214",
+    "project_id": "fireebasepraticeshh",
+    "storage_bucket": "fireebasepraticeshh.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:625441822214:android:96e97fa894411c2ad3d587",
+        "android_client_info": {
+          "package_name": "com.example.firebase_flutter_pra"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "625441822214-k836dmosc6v52vg0n5fuljqh5q8hc10s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBG1IyvkR_gVNfXNJG280Bvc3MtFy1wkMw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "625441822214-k836dmosc6v52vg0n5fuljqh5q8hc10s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
