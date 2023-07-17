@@ -32,6 +32,7 @@ class FireBaseHelper
   Future<void> SignOut()
   async {
     await auth.signOut();
+    // GoogleSignIn().signOut();
   }
 
   Future<String> createUser(String email,String password)
