@@ -14,6 +14,9 @@ class _Log_ScreenState extends State<Log_Screen> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(child: Scaffold(
+      appBar:AppBar(
+
+      ),
       body: Center(
         child: ElevatedButton(
           child: Text("Log Out"),
@@ -24,6 +27,15 @@ class _Log_ScreenState extends State<Log_Screen> {
 
 
           },
+        ),
+      ),
+      drawer: Drawer(
+        child: Column(
+          children: [
+            CircleAvatar(
+              radius: 30,
+            ),
+          ],
         ),
       ),
     ),);
