@@ -88,4 +88,9 @@ class FireBaseHelper {
       "dec": model.dec
     });
   }
+
+  Stream<QuerySnapshot<Map<String, dynamic>>> readProductData()
+  {
+    return firestore.collection("Product").snapshots();
+  }
 }

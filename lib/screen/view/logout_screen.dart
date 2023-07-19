@@ -1,5 +1,6 @@
 import 'package:firebase_flutter_pra/screen/controller/user_controller.dart';
 import 'package:firebase_flutter_pra/screen/view/product_add_screen.dart';
+import 'package:firebase_flutter_pra/screen/view/product_screen.dart';
 import 'package:firebase_flutter_pra/utils/firebase_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -43,7 +44,7 @@ class _Log_ScreenState extends State<Log_Screen> {
           ),
           body: TabBarView(
             children: [
-              AddProuctScreen(),
+              ProductScreen(),
               AddProuctScreen(),
             ],
           ),
