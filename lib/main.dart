@@ -4,6 +4,7 @@ import 'package:firebase_flutter_pra/screen/view/home_screen.dart';
 import 'package:firebase_flutter_pra/screen/view/logout_screen.dart';
 import 'package:firebase_flutter_pra/screen/view/sibnup_regitor_screen.dart';
 import 'package:firebase_flutter_pra/screen/view/splesh_screen.dart';
+import 'package:firebase_flutter_pra/utils/local_notification_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -15,6 +16,7 @@ Future<void> main() async {
 
     options: DefaultFirebaseOptions.currentPlatform,
   );
+  Notifactionhelper.notification.intiltionNoti();
   runApp(
     GetMaterialApp(
       debugShowCheckedModeBanner: false,

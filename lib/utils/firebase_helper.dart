@@ -106,6 +106,7 @@ class FireBaseHelper {
       "cate": model.cate,
       "img": model.img,
       "dec": model.dec
+
     });
   }
 }
