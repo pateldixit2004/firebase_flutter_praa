@@ -1,4 +1,5 @@
 import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_flutter_pra/admin_update_screen.dart';
 import 'package:firebase_flutter_pra/screen/view/home_screen.dart';
 import 'package:firebase_flutter_pra/screen/view/logout_screen.dart';
 import 'package:firebase_flutter_pra/screen/view/sibnup_regitor_screen.dart';
@@ -22,6 +23,7 @@ Future<void> main() async {
         '/home':(p0) => HomeScreen(),
         '/signUp':(p0) => SignUpScreen(),
         '/log':(p0) => Log_Screen(),
+        '/update':(p0) => AdminUpdateScreen(),
       },
     )
   );

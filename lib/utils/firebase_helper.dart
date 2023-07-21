@@ -5,10 +5,13 @@ import 'package:firebase_flutter_pra/screen/model/peoduct_model.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
 class FireBaseHelper {
-  static FireBaseHelper base = FireBaseHelper();
+  static FireBaseHelper base = FireBaseHelper._();
+
+  FireBaseHelper._();
 
   FirebaseAuth auth = FirebaseAuth.instance;
-  FirebaseFirestore firestore=FirebaseFirestore.instance;
+  FirebaseFirestore firestore = FirebaseFirestore.instance;
+
   Future<String> anonymouslyGet() async {
     try {
       await auth.signInAnonymously();
@@ -79,7 +82,6 @@ class FireBaseHelper {
   // =====================================
 
   void insertproductDeta(ProductModel model) {
-
     firestore.collection("Product").add({
       "name": model.name,
       "price": model.price,
@@ -89,8 +91,21 @@ class FireBaseHelper {
     });
   }
 
-  Stream<QuerySnapshot<Map<String, dynamic>>> readProductData()
-  {
+  Stream<QuerySnapshot<Map<String, dynamic>>> readProductData() {
     return firestore.collection("Product").snapshots();
+  }
+
+  void deleteProduct(String id) {
+    firestore.collection("Product").doc("${id}").delete();
+  }
+
+  void updateProductData(ProductModel model) {
+    firestore.collection("Product").doc("${model.id}").set({
+      "name": model.name,
+      "price": model.price,
+      "cate": model.cate,
+      "img": model.img,
+      "dec": model.dec
+    });
   }
 }

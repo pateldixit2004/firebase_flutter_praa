@@ -21,16 +21,16 @@ class _Selsh_ScreenState extends State<Selsh_Screen> {
   void initState() {
     super.initState();
 
-    FireBaseHelper.base.chechUser();
-    Timer(Duration(seconds: 5), () {
-      islogin==true?Get.toNamed("/home"):Get.toNamed("/log");
+   islogin =FireBaseHelper.base.chechUser();
 
-    });
 
   }
 
   @override
   Widget build(BuildContext context) {
+    Timer(Duration(seconds: 3), () {
+      islogin==true?Get.toNamed("/home"):Get.toNamed("/log");
+    });
     return SafeArea(child: Scaffold(
       body: Center(
         child: FlutterLogo(),
