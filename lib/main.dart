@@ -7,6 +7,7 @@ import 'package:firebase_flutter_pra/screen/view/splesh_screen.dart';
 import 'package:firebase_flutter_pra/utils/local_notification_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:sizer/sizer.dart';
 
 import 'firebase_options.dart';
 
@@ -17,16 +18,19 @@ Future<void> main() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
   Notifactionhelper.notification.intiltionNoti();
+  Notifactionhelper.notification.initMessage();
   runApp(
-    GetMaterialApp(
-      debugShowCheckedModeBanner: false,
-      routes: {
-        '/':(p0) =>Selsh_Screen(),
-        '/home':(p0) => HomeScreen(),
-        '/signUp':(p0) => SignUpScreen(),
-        '/log':(p0) => Log_Screen(),
-        '/update':(p0) => AdminUpdateScreen(),
-      },
+    Sizer(
+      builder: (context, orientation, deviceType) =>  GetMaterialApp(
+        debugShowCheckedModeBanner: false,
+        routes: {
+          '/':(p0) =>Selsh_Screen(),
+          '/home':(p0) => HomeScreen(),
+          '/signUp':(p0) => SignUpScreen(),
+          '/log':(p0) => Log_Screen(),
+          '/update':(p0) => AdminUpdateScreen(),
+        },
+      ),
     )
   );
 }

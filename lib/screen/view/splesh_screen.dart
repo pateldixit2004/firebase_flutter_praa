@@ -33,7 +33,7 @@ class _Selsh_ScreenState extends State<Selsh_Screen> {
     });
     return SafeArea(child: Scaffold(
       body: Center(
-        child: FlutterLogo(),
+        child: FlutterLogo(size: 150,),
       ),
     ),);
   }

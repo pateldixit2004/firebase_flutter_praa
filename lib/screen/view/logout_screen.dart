@@ -31,6 +31,7 @@ class _Log_ScreenState extends State<Log_Screen> {
         length: 2,
         child: Scaffold(
           appBar: AppBar(
+            backgroundColor: Colors.green,
             actions: [
               IconButton(onPressed: () {
                 Notifactionhelper.notification.showSimpleNotifiction();
