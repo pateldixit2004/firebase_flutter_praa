@@ -12,6 +12,7 @@ class FireBaseHelper {
   FirebaseAuth auth = FirebaseAuth.instance;
   FirebaseFirestore firestore = FirebaseFirestore.instance;
 
+
   Future<String> anonymouslyGet() async {
     try {
       await auth.signInAnonymously();

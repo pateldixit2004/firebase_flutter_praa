@@ -23,6 +23,7 @@ Future<void> main() async {
     Sizer(
       builder: (context, orientation, deviceType) =>  GetMaterialApp(
         debugShowCheckedModeBanner: false,
+        // initialRoute: '/update',
         routes: {
           '/':(p0) =>Selsh_Screen(),
           '/home':(p0) => HomeScreen(),
