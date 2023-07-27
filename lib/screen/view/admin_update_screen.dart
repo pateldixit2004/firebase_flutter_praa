@@ -18,14 +18,14 @@ class _AdminUpdateScreenState extends State<AdminUpdateScreen> {
   TextEditingController txtcat = TextEditingController();
   TextEditingController txtdec = TextEditingController();
   TextEditingController txtimage = TextEditingController();
-  String? id;
+  String id="";
 
   @override
   void initState() {
     super.initState();
     ProductModel model = Get.arguments;
-    String id = model.id!;
-
+     id = model.id!;
+     print("=======================================================================${id}");
 
     txtname = TextEditingController(text: model.name);
     txtprice = TextEditingController(text: model.price);

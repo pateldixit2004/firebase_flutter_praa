@@ -29,7 +29,7 @@ class _Selsh_ScreenState extends State<Selsh_Screen> {
   @override
   Widget build(BuildContext context) {
     Timer(Duration(seconds: 3), () {
-      islogin==true?Get.toNamed("/home"):Get.toNamed("/log");
+      islogin==false?Get.toNamed("/home"):Get.toNamed("/log");
     });
     return SafeArea(child: Scaffold(
       body: Center(

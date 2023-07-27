@@ -1,5 +1,5 @@
 import 'package:firebase_core/firebase_core.dart';
-import 'package:firebase_flutter_pra/admin_update_screen.dart';
+import 'package:firebase_flutter_pra/screen/view/admin_update_screen.dart';
 import 'package:firebase_flutter_pra/screen/view/home_screen.dart';
 import 'package:firebase_flutter_pra/screen/view/logout_screen.dart';
 import 'package:firebase_flutter_pra/screen/view/sibnup_regitor_screen.dart';

@@ -24,7 +24,7 @@ class FireBaseHelper {
 
   bool chechUser() {
     auth.currentUser;
-    return auth == null;
+    return auth != null;
   }
 
   Future<void> SignOut() async {
