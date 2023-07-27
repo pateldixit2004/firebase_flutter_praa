@@ -54,10 +54,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   }
                 Get.snackbar('$msg','',backgroundColor: msg=="Succes"?Colors.green:Colors.red );
 
-
-
               },
-
 
               child: Container(
                 height: 50,
@@ -65,9 +62,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
                   color: Colors.black,
-
                 ),
-
                 child: Center(child: Text("Sign in",style: TextStyle(color: Colors.white),)),
               ),
             ),
