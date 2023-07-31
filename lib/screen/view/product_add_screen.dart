@@ -62,7 +62,7 @@ class _AddProuctScreenState extends State<AddProuctScreen> {
             TextField(
                 controller: txtimage,
               keyboardType: TextInputType.text,
-              maxLines: 7,
+
               decoration: InputDecoration(
                   border: OutlineInputBorder(),
                   // label: Text("Product ${Name}",style: TextStyle(color: Colors.grey),),

@@ -5,6 +5,7 @@ import 'package:firebase_flutter_pra/utils/firebase_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
+import 'package:sizer/sizer.dart';
 
 class Selsh_Screen extends StatefulWidget {
   const Selsh_Screen({Key? key}) : super(key: key);
@@ -32,8 +33,9 @@ class _Selsh_ScreenState extends State<Selsh_Screen> {
       islogin==false?Get.toNamed("/home"):Get.toNamed("/log");
     });
     return SafeArea(child: Scaffold(
+
       body: Center(
-        child: FlutterLogo(size: 150,),
+        child: Image.asset('assets/image/logo1.png',height: 150,),
       ),
     ),);
   }

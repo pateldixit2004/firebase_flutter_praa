@@ -68,8 +68,13 @@ class _ProductScreenState extends State<ProductScreen> {
                   child: Row(
                     children: [
                       SizedBox(width: 2.w,),
-                      Image.network(
+                      l1[index].img!.isEmpty?Image.network(
                         "https://m.media-amazon.com/images/I/41ATdIgTJLL.jpg",
+                        height: 10.h,
+                      ):
+                      Image.network(
+                      "${l1[index].img}",
+                          // l1[index].img==null?"https://m.media-amazon.com/images/I/41ATdIgTJLL.jpg":"${l1[index].img}",
                         height: 10.h,
                       ),
                       const SizedBox(
@@ -77,23 +82,27 @@ class _ProductScreenState extends State<ProductScreen> {
                       ),
                       Column(
                         mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
                             "${l1[index].name}",
                             style: TextStyle(
-                                fontWeight: FontWeight.bold, fontSize: 20),
+                                fontWeight: FontWeight.bold, fontSize: 25),
                           ),
+                          SizedBox(height: 5,),
                           Text(
                             "₹ ${l1[index].price}",
                             style: TextStyle(
-                                fontWeight: FontWeight.bold,
+                                fontWeight: FontWeight.normal,
                                 fontSize: 18,
                                 color: Colors.orange),
                           ),
+                          SizedBox(height: 5,),
+
                           Text(
                             "${l1[index].dec}",
                             style: TextStyle(
-                                fontWeight: FontWeight.bold,
+                                fontWeight: FontWeight.normal,
                                 fontSize: 16,
                                 color: Colors.green),
                           ),

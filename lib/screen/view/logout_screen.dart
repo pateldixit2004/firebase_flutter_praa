@@ -41,6 +41,8 @@ class _Log_ScreenState extends State<Log_Screen> {
               }, icon: Icon(Icons.timer))
             ],
             bottom: TabBar(
+              indicatorColor: Colors.white,
+              indicatorSize: TabBarIndicatorSize.label,
               tabs: [
                 Tab(
                   child: Text("Product"),
