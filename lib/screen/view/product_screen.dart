@@ -58,9 +58,9 @@ class _ProductScreenState extends State<ProductScreen> {
                     border: Border.all(color: Colors.grey),
                     boxShadow: [
                       BoxShadow(
-                          blurRadius: 2,
-                          color: Colors.grey,
-                          spreadRadius: 1
+                          blurRadius: 0.9,
+                          color: Colors.grey.shade100,
+                          spreadRadius: 0.5
                       )
 
                     ],
